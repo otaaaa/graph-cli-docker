@@ -1,0 +1,6 @@
+#!/bin/bash -ex
+
+docker run -it --rm --name creal-graph-cli \
+  -v "$PWD":/usr/src/app \
+  -w /usr/src/app \
+  graph-cli /bin/sh -c "$*"
